@@ -4,4 +4,4 @@ def max_integer(my_list=[]):
         return None
     list_sort = my_list.copy()
     list_sort.sort()
-    print("{:d}".format(list_sort[-1]))
+    return (list_sort[-1])
