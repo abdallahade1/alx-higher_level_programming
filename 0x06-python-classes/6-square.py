@@ -8,13 +8,13 @@ class Square:
     Attributes:
         size: size of a square (1 side).
     """
-    def __init__(self, size=0, position=(0, 0)):
-        """Creates new instances of square.
+        def __init__(self, size=0, position=(0, 0)):
+            """Creates new instances of square.
 
-        Args:
-            __size (int): size of the square (1 side).
-            __position (tuple): position of the square.
-        """
+            Args:
+                __size (int): size of the square (1 side).
+                __position (tuple): position of the square.
+            """
         self.__size = size
         self.position = position
 
