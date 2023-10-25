@@ -6,7 +6,8 @@ class Square:
     """Define a square.
 
     Attributes:
-        size: size of square"""
+        size: size of square
+    """
 
     def __init__(self, size):
         """Initialize the data.
