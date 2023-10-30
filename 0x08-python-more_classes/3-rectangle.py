@@ -19,13 +19,13 @@ class Rectangle:
         return self.__width
 
     @width.setter
-    def width(self, value):
+    def width(self, widthValue):
         """Set width"""
-        if type(value) != int:
+        if type(widthValue) != int:
             raise TypeError("width must be an integer")
-        if value < 0:
+        if widthValue < 0:
             raise ValueError("width must be >= 0")
-        self.__width = value
+        self.__width = widthValue
 
     @property
     def height(self):
@@ -33,13 +33,13 @@ class Rectangle:
         return self.__height
 
     @height.setter
-    def height(self, value):
+    def height(self, HeightValue):
         """Set height"""
-        if type(value) != int:
+        if type(HeightValue) != int:
             raise TypeError("height must be an integer")
-        if value < 0:
+        if HeightValue < 0:
             raise ValueError("height must be >= 0")
-        self.__height = value
+        self.__height = HeightValue
 
     def area(self):
         """Calculate area"""
@@ -53,7 +53,7 @@ class Rectangle:
             return 0
         return (width + height) * 2
 
-     def __str__(self):
+    def __str__(self):
         """Get string representation"""
         width = self.__width
         height = self.__height
