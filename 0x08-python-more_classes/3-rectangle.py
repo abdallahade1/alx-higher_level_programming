@@ -53,13 +53,15 @@ class Rectangle:
             return 0
         return (width + height) * 2
 
-    def __str__(self):
-        """returns printable string representaion of the rectangle"""
+     def __str__(self):
+        """Get string representation"""
+        width = self.__width
+        height = self.__height
         string = ""
-        if self.__width = 0 or self.__height = 0:
+        if width == 0 or height == 0:
             return string
-        for i in range(self.__height):
-            for j in range(self.__width):
-                string = strint + "#"
-            string = string + "\n"
+        for i in range(height):
+            for j in range(width):
+                string = string + '#'
+            string = string + '\n'
         return string[:-1]
