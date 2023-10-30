@@ -60,8 +60,8 @@ class Rectangle:
         string = ""
         if width == 0 or height == 0:
             return string
-        for i in range(height):
-            for j in range(width):
+        for r in range(height):
+            for c in range(width):
                 string = string + '#'
             string = string + '\n'
         return string[:-1]
