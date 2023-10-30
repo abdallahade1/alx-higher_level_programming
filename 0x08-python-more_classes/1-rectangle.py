@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
 """
-This is a module for a class rectange
+This is a module for a class Rectange
 """
 
 
 class Rectange:
-    """class of a rectangle"""
+    """class of a Rectangle"""
 
     def __init__(self, width=0, height=0):
         """initialize a class"""
