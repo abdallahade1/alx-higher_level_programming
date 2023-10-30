@@ -5,7 +5,7 @@ This is a module for a class rectange
 """
 
 
-class rectange:
+class Rectange:
     """class of a rectangle"""
 
     def __init__(self, width=0, height=0):
