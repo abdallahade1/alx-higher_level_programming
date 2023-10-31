@@ -2,6 +2,6 @@
 
 def magic_string():
     result = "BestSchool"
-    for i in range(5):
+    for i in range(n):
         result += "BestSchool"
     return result
