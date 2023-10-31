@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-
-def magic_string():
+def magic_string(n):
     result = "BestSchool"
-    for i in range(n):
+    for _ in range(n):
         result += "BestSchool"
     return result
