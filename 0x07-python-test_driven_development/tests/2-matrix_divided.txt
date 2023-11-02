@@ -18,10 +18,30 @@ Test for one element
 	>>> matrix_divided([[4]], 2)
 	[[2.0]]
 
+Test division by inf:
+    	>>> matrix_divided([[2, 4, 8], [1, 2, 3]], float('inf'))
+    	[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
 Test for division on negative
 
 	>>> matrix_divided([[2, 4, 8], [1, 2, 3]], -2)
-    [[-1.0, -2.0, -4.0], [-0.5, -1.0, -1.5]]
+    	[[-1.0, -2.0, -4.0], [-0.5, -1.0, -1.5]]
+
+Test division by nan:
+    	>>> matrix_divided([[2, 4, 8], [1, 2, 3]], float('nan'))
+    	[[nan, nan, nan], [nan, nan, nan]]
+
+Test empty matrix:
+    	>>> matrix_divided([[]], 10)
+    	Traceback (most recent call last):
+    	...
+    	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test empty matrix more:
+    	>>> matrix_divided([[], [], []], 10)
+    	Traceback (most recent call last):
+    	...
+    	TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 Tests error cases
 
