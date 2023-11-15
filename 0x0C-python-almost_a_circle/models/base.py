@@ -31,3 +31,9 @@ class Base:
         with open("{}.json".format(cls.__name__), "w",
                   encoding="utf-8") as file:
             file.write(cls.to_json_string(list_objs))
+
+    def from_json_string(json_string):
+        """Returns The list of json representaion"""
+        if json_string is None or json_string == 0:
+            return []
+        return json.loads(json_string)
