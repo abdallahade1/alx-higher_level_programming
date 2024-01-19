@@ -17,7 +17,7 @@ if __name__ == '__main__':
 
     cur.execute("SELECT * FROM states ORDER BY id ASC")
 
-    rows_selected = db_cursor.fetchall()
+    rows_selected = cur.fetchall()
 
     for row in rows_selected:
         print(row)
