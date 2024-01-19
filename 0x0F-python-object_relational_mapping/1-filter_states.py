@@ -15,9 +15,12 @@ if __name__ == '__main__':
 
     cur = conn.cursor()
 
-    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    cur.execute("SELECT * FROM states ORDER WHERE name LIKE 'N%' ORDER BY id ASC")
 
     rows_selected = db_cursor.fetchall()
 
     for row in rows_selected:
         print(row)
+
+    cur.close()
+    conn.close()
