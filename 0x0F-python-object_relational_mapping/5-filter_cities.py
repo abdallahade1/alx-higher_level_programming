@@ -25,8 +25,7 @@ if __name__ == '__main__':
     cur.execute(query, (sys.argv[4],))
     rows_selected = cur.fetchall()
 
-    for row in rows_selected:
-        print(row)
+    print(", ".join([city[0] for city in rows_selected]))
 
     cur.close()
     conn.close()
