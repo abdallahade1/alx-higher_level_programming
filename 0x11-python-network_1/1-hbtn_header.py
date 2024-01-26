@@ -10,8 +10,10 @@ variable found in the header of the response.
 import sys
 import urllib.request
 
-URL = sys.argv[1]
 
-req = urllib.request.Request(URL)
-with urllib.request.urlopen(URL) as response:
-    print(dict(response.headers).get("X-Request-Id"))
+if __name__ == "__main__":
+    URL = sys.argv[1]
+
+    req = urllib.request.Request(URL)
+    with urllib.request.urlopen(URL) as response:
+        print(dict(response.headers).get("X-Request-Id"))
